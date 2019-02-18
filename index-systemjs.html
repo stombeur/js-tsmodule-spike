@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <button id="clickme">Click</button>
+        
+    <script src="node_modules/systemjs/dist/system.js"></script>
+    <script>
+        System.config({
+        baseURL: './js-systemjs',
+        packages: {
+            '.': {}
+        }
+      });
+        System.import('main').then(function(_) {console.log(_)});
+    </script>
+  </head>
+</html>
